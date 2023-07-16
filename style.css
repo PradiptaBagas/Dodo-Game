@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500;700&display=swap');
+body {
+    background-color: #8bd3dd;
+    font-family: 'Tektur', 'cursive';
+    background-image: linear-gradient(to right, #0099cc, #f582ae);
+}
+
+canvas {
+    border: 5px solid;
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url(assets/bg.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* untuk bikin end menu overlap */
+    z-index: 1;
+}
+
+.backdrop-blur {
+    filter: blur(5px);
+}
+
+#end-menu {
+    display: none;
+    margin: 50px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+}
+
+#score-display {
+    color: #ffff;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #0099cc;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
